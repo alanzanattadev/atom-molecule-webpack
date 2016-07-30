@@ -44,7 +44,9 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./a.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var a = 2;
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./b.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+	var b = 4;
 
 
 /***/ }
