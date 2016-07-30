@@ -1,0 +1,115 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.molecule-webpack {
+}
+
+.molecule-webpack-status-bar {
+  max-height: 30px;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+
+  .molecule-webpack-status-bar-tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.molecule-webpack-task-runner-tool-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  padding: 10px 0px;
+
+  button {
+    padding: 2px;
+    margin: 0px 2px;
+    &:active {
+      background-color: @button-background-color-selected;
+    }
+    &.icon {
+      padding-left: 3px;
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  select {
+    padding: 3px;
+    margin: 0px 5px;
+  }
+
+  button,select {
+    background-color: @button-background-color;
+    border: @button-border-color 1px solid;
+    color: @text-color;
+    &:hover {
+      background-color:  @button-background-color-hover;
+    }
+  }
+}
+
+.molecule-webpack-diagnostics-pane {
+  min-height: 200px;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+
+  .diagnostics-table {
+    padding: 10px;
+    width: 99%;
+    overflow-y: scroll;
+
+    tr {
+      max-height: 15px;
+    }
+
+    tr:not(.error):not(.warning) {
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      border-bottom: 1px solid #aaa;
+    }
+
+    tr.error, tr.warning {
+      cursor: pointer;
+    }
+
+    th {
+      overflow: hidden;
+      padding: 5px 15px;
+      white-space: nowrap;
+
+      &.description {
+        width: 50%;
+        max-width: 500px;
+      }
+      &.path {
+        width: 45%;
+        min-width: 300px;
+      }
+      &.line {
+        width: 5%;
+        min-width: 50px;
+      }
+    }
+
+    .error th {
+      color: #ff6347;
+    }
+
+    .warning th {
+      color: #e2c08d;
+    }
+  }
+}
