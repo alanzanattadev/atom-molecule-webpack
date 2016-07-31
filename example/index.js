@@ -1,3 +1,3 @@
 var a = 2;
-require('./b.js')
+require('./b');
 var b = 4;
