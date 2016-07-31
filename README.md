@@ -18,3 +18,7 @@ Webpack integration for MoleculeIDE, with diagnostics, toolbar and build progres
       - watch
     - start
     - stop
+
+## Use
+
+Click on the webpack logo in status-bar

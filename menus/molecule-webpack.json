@@ -1,10 +1,7 @@
 {
   "context-menu": {
     "atom-text-editor": [
-      {
-        "label": "Toggle molecule-webpack",
-        "command": "molecule-webpack:toggle"
-      }
+
     ]
   },
   "menu": [
@@ -14,10 +11,7 @@
         {
           "label": "molecule-webpack",
           "submenu": [
-            {
-              "label": "Toggle",
-              "command": "molecule-webpack:toggle"
-            }
+            
           ]
         }
       ]
