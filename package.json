@@ -1,9 +1,12 @@
 {
   "name": "molecule-webpack",
   "main": "./lib/molecule-webpack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Webpack integration for MoleculeIDE",
-  "keywords": ["molecule", "webpack"],
+  "keywords": [
+    "molecule",
+    "webpack"
+  ],
   "repository": "https://github.com/alanzanattadev/atom-molecule-webpack",
   "license": "MIT",
   "engines": {
